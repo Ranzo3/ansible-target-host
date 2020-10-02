@@ -24,7 +24,7 @@ delphix_home: "/home/{{ delphix_user }}"
 ### The directory where the Delphix DDP should mount the VDBs
 delphix_mount: /mnt/provision
 ### The directory where the Delphix DDP will store the toolkit files
-delphix_toolkit: /home/delphix/toolkit
+delphix_toolkit: /home/{{ delphix_user }}/toolkit
 ### Optional: The SSH key of the Delphix DDP
 # ex.
 #  delphix_ssh_keys:
