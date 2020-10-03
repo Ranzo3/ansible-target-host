@@ -61,9 +61,9 @@
     mode: "{{ item.mode }}"
     state: directory
   with_items:
-    - { path: "{{ delphix_toolkit }}", mode: "0770" }
-    - { path: "{{ delphix_home }}/.ssh", mode: "0700" }
-    - { path: "{{ delphix_mount }}", mode: "0700" }
+    - {path: "{{ delphix_toolkit }}", mode: "0770"}
+    - {path: "{{ delphix_home }}/.ssh", mode: "0700"}
+    - {path: "{{ delphix_mount }}", mode: "0700"}
 
 - name: Check to see if "{{ delphix_home }}/.ssh/authorized_keys" exists
   stat:
