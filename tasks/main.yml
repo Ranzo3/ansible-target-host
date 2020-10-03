@@ -7,8 +7,8 @@
 - name: Check for correct OS family & min version
   assert:
     that:
-      - "ansible_os_family == '{{ os_family_supported }}'"
-      - "ansible_distribution_version is version('{{ os_min_supported_version }}', '>=')"
+      - ansible_os_family == '{{ os_family_supported }}'
+      - ansible_distribution_version is version('{{ os_min_supported_version }}', '>=')
 
 # Include variables and define needed variables.
 - name: Include OS-specific variables.
